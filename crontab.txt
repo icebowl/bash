@@ -1,0 +1,2 @@
+From gentoo
+*/60 * * * * /bin/bash -l /home/cwc/bash/makelogs.sh
