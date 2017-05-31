@@ -1,0 +1,9 @@
+caution
+ls | cat -n | while read n f; do mv "$f" "file-$n.jpg"; done
+
+dir *.jpg | %{$x=0} {Rename-Item $_ -NewName "Base$($x.tostring('000000')).jpg"; $x++ }
+
+ls -1 *.png | xargs -n 1 bash -c 'convert "$0" "${0%.png}.jpg"'
+
+more re-name.sh 
+x=0; for i in *jpg; do counter=$(printf %03d $x); mv "$i" move/img-"$counter".jpg; x=$(($x+1)); done
