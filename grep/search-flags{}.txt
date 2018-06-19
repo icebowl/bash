@@ -1,1 +1,3 @@
 grep -rn '\<flag{' /home/cwc/icebowl.io/
+
+https://unix.stackexchange.com/questions/445636/how-to-grep-the-braces
