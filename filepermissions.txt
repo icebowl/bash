@@ -1,0 +1,11 @@
+file	owner	group	other
+|-d	rwx	rwx	rwx
+
+example:
+chmod 755
+	rwx	r-x	r-x
+	7	5	5
+
+r(read)
+w(write)
+x(excute)
