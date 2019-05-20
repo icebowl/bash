@@ -1,0 +1,14 @@
+copy minecraft-pi to a location to edit
+hexdump -ve '1/1 "%.2X"' minecraft-pi > mcpi.txt;
+sed -i "s/53746576655069/496365426f776c/g" mcpi.txt;
+xxd -r -p mcpi.txt > minecraft-pi.bin;
+
+
+
+
+StevePi
+53746576655069
+
+
+IceBowl
+496365426f776c
