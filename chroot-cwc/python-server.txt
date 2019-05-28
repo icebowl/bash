@@ -1,0 +1,6 @@
+4. # wget https://gist.githubusercontent.com/Bryan1998/772cf58e6aff7cf360387886f5af56ff/raw/0eae6687df97af7c8246ff468f142730c8375c3c/score_base.py
+Add python script to cron
+5. # crontab -e
+  a. add this to the bottom: @reboot python /opt/fbctf/score_base.py
+  b. save and exit
+  c. reboot machine: # reboot NOW
