@@ -1,11 +1,12 @@
 who 
+who -u
 ps 
 ps t
 
 
 skill -KILL -u vivek
 
-
+sudo pkill -KILL -u green
 
 
 w
