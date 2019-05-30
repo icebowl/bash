@@ -1,0 +1,33 @@
+
+
+notes:
+
+Task: How To Halt/Stop a User Called vivek
+
+Open a command-line terminal (select Applications > Accessories > Terminal), and then type the following commands. First, switch to the root user by typing su – and entering the root password, when prompted (you can also use sudo if configured). Type the skill command as follows:
+# skill -STOP -u vivek
+
+The skill command sends a terminate command (or another specified signal) to a specified set of processes.
+Task: Resume Halted User Called vivek
+
+Send CONT single to user vivek, type the following command:
+# skill -CONT -u vivek
+Task: Kill and Logout a User Called vivek
+
+You can send KILL single, type the following command:
+# skill -KILL -u vivek
+Task: Kill and Logout All Users
+
+The ultimate command to kill and logout all users is as follows:
+# skill -KILL -v /dev/pts/*
+[Warning examples may crash your computer] WARNING! These tools are obsolete, unportable and it is here due to historical reasons. Consider using the killall, pkill, and pgrep commands instead as follows.
+pkill command
+
+To halt or stop a user called vivek, enter:
+# pkill -STOP -u vivek
+
+To resume a user called vivek, enter:
+# pkill -CONT -u vivek
+
+To kill all php-cgi process owned by vivek user, enter:
+# pkill -KILL -u vivek php-cgi
