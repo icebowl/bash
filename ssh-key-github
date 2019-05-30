@@ -1,0 +1,6 @@
+ssh-keygen -t rsa -b 4096 -C "icebowl1967@gmail.com"
+eval "$(ssh-agent -s)"
+
+
+
+cat ~/.ssh/id_rsa.pub
