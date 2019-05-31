@@ -1,8 +1,4 @@
 # bash
-added key
-added key
-addey key
-25
 
 After creating a config file (~/.ssh/config) it worked. This is what I had to put in it:
 
@@ -14,3 +10,5 @@ IdentityFile ~/.ssh/id_rsa
 TCPKeepAlive yes
 IdentitiesOnly yes
 
+
+https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
