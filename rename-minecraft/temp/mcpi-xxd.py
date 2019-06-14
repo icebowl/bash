@@ -14,13 +14,8 @@ def main():
  mcnames = ['alfaaaa','bravooo','charlie','deltaaa','echoooo','foxtrot','golffff','hotelll','indiaaa','juliett', 'kiloooo','limaaaa','mikeaaa', 
 		'novvvvv','oscarrr','papaaaa','quebecc','romeooo','sierraa','tangooo','uniform','victorr','whiskey','x-rayyy','yankeee','zuluuuu']
  for n in mcnames:
-  word = n
-  print 
-  hexString = char2hex(word)
-  #print(word,hexString)
-  #print("53746576655069",hexString,word)
-  sedString = "sed -i \"s/53746576655069/"+hexString+"/g\""+" minecraft-"+word+".txt"
-  print (sedString)
+  s =  "xxd -r -p minecraft-"+n+".txt > minecraft-pi-"+n+";"  
+  print(s)
 main()
 
 #sed -i "s/53746576655069/496365426f776c/g" mcpi.txt;

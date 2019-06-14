@@ -1,0 +1,5 @@
+python3 -m http.server 8080
+
+jobs -l
+ps -A | grep python3
+kill id

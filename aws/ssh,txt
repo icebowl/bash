@@ -1,0 +1,1 @@
+ssh -i  rh190522.pem -N -D 1133 ec2-user@icebowl.cc
