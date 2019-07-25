@@ -1,3 +1,4 @@
+<pre>
 use passphrase
 
 ls -al ~/.ssh
@@ -12,3 +13,11 @@ fix permissions
 
 eval `ssh-agent -s` 
 ssh-add
+
+190725 65521 note:
+ssh-keygen -t rsa -b 4096 -C "email@gmail.com"
+eval "$(ssh-agent -s)"
+
+copy key :
+xclip -sel clip < ~/.ssh/tritech-cyber.pub 
+</pre>
