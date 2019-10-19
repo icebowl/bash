@@ -1,4 +1,11 @@
 # bash
+github.com commands
+git config --list
+git config --global user.username yourgithubusername
+git config --global user.name yourgithubusername
+git config --global user.user yourgithubusername
+git config --global user.email yourgithubemail@mail.ioe
+git config --list
 
 After creating a config file (~/.ssh/config) it worked. This is what I had to put in it:
 
