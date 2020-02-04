@@ -1,5 +1,5 @@
 <pre>
-use passphrase
+USE PASSPHASE
 
 ls -al ~/.ssh
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
