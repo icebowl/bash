@@ -18,6 +18,9 @@ ssh-add
 ssh-keygen -t rsa -b 4096 -C "email@gmail.com"
 eval "$(ssh-agent -s)"
 
+this works ok
 copy key :
 xclip -sel clip < ~/.ssh/tritech-cyber.pub 
+
+
 </pre>
