@@ -21,6 +21,9 @@ IdentitiesOnly yes
 https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 
 
+git remote set-url origin git@github.com:icebowl/bash.git
+
+
 trail 1
 trial 2
 trial 3
