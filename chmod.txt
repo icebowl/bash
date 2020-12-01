@@ -1,0 +1,44 @@
+Linux file permissions using chmod
+
+Reference   Class     Description
+u          owner      file's owner
+
+g          group      users who are members of
+                      the file's group
+
+o          others     users who are neither the
+                      file's owner nor members of 
+                      the file's group
+
+a          all       All three of the above, same as ugo
+
+
+chmod u+rwx filename
+chomd u-rwx nameofthefile
+
+r = 4
+w = 2
+x = 1
+
+111 base 2 = 7 base 10
+101 base 2 = 5 base 10
+
+chmod 700 filename
+
+chmod 755 filename
+
+chmod u+rwx filename
+
+-rwx rwx rwx = 111 111 111
+-rwx r-x r-x = 111 101 101  = 7 5 5
+-rw- rw- rw- = 110 110 110
+-rwx --- --- = 111 000 000
+
+and so on...
+
+rwx = 111 in binary = 7
+rw- = 110 in binary = 6
+r-x = 101 in binary = 5
+r-- = 100 in binary = 4
+
+chmod a+x filename.sh to execute
