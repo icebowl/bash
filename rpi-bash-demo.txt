@@ -1,0 +1,37 @@
+Raspberry Pi Bash
+
+RPi Linux specific command:
+sudo raspi-config
+vcgencmd measure_temp  : reveals the CPU temperature (vital if you're concerned about airflow).
+vcgencmd get_mem arm && vcgencmd get_mem gpu  : will reveal the memory split between the CPU and GPU, which can be adjusted in the config screen.
+
+
+List of useful RPi and Linux BASH commands.
+sudo -i :  This is my favorite way to become a super user
+sudo apt update
+sudo apt upgrade
+sudo apt dist-upgrade
+sudo rpi-update
+sudo apt update && sudo apt upgrade && sudo apt dist-upgrade && sudo rpi-update
+
+pwd : shows you the current directory (print working directory).
+ls :  will list the contents of the directory.
+cd : is used to change the directory. For example, cd edward with switch you to a child directory called "Edward" while cd.. returns focus to the parent directory.
+mkdir newdir : will create a new directory, where "newdir" is the directory label. You can also create a succession of new directories with mkdir -p /home/edward/newdir1/newdir2, where both newdir1 and newdir2 are created, but this will only work with the -p
+clear : presents a clean new screen, useful if your previous commands are cluttering things up.
+
+cat /proc/cpuinfo  
+cat /proc/meminfo displays details about the Raspberry Pi's memory.
+cat /proc/partitions reveals the size and number of partitions on your SD card or HDD.
+cat /proc/version shows you which version of the Pi you are using.
+
+free -o -h will display the available system memory.
+top d1 checks the load on your CPU, displaying details for all cores.
+df -h is a great way to quickly check the free disk space on your Raspberry Pi.
+
+ls /dev/sda* displays a list of partitions on the SD card. For a Raspberry Pi with a HDD attached, substitute sda* with hda*.
+lsusb displays all attached USB devices. This is crucial for connecting a hard disk drive or other USB hardware that requires configuration.
+
+startx will start the Raspberry Pi GUI (graphic user environment) and return you to the default Raspbian desktop.
+sudo shutdown -h now will commence the shutdown process with immediate effect. Schedule a timed shutdown with the format: sudo shutdown -h 21:55
+sudo reboot is for restarting the Raspberry Pi from the command line.
