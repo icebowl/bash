@@ -1,0 +1,6 @@
+ apt install jmtpfs
+
+mkdir mnt
+jmtpfs mnt/
+
+cd mnt
