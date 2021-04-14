@@ -1,0 +1,1 @@
+pdftoppm -jpeg -r 300 input.pdf output.jpg
