@@ -1,0 +1,5 @@
+source : https://www.cloudsavvyit.com/8151/how-to-convert-images-to-text-on-the-linux-command-line-with-ocr/
+
+sudo apt install tesseract-ocr libtesseract-dev tesseract-ocr-eng
+
+tesseract -l eng input_for_ocr.png output_from_ocr pdf
